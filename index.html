@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="">
 
 <head>
-<title>Happy Birthday v9</title>
+<title>Happy Birthday Riya</title>
 </head>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Itim&display=swap');
@@ -109,7 +109,7 @@ blockquote p:not(#kalimat, #teksnim){display:none;}
 .heart svg{width:100%;height:100%;fill:none;stroke:pink}
 </style>
 <body>
-   <audio src="" id="linkmp3" class="sembunyi"></audio>
+   <audio src="./assets/Fullsenyum.mp3" id="linkmp3" class="sembunyi"></audio>
    
    <div id="bodyblur">
      <img src="./assets/wp2.jpg" id="wallpaper"/>
@@ -158,7 +158,25 @@ blockquote p:not(#kalimat, #teksnim){display:none;}
      </div>
      <div><blockquote id='bq'>
        <p id="teksnim">Wish You All The Best! 🥳</p>
-       <p id="kalimat"><b>Happy birthday</b>! 💖 Wishing you a long life and always stay sweet. The world can be tiring sometimes, but you must keep your spirit up! 🫶<br><br>If the world feels unfair, you can come to me. Maybe I can't fix everything, but I'll always try to make you feel<br>better 💫<br><br>Once again,<br><span class="ft">Happy Birthday! 🫰💐</span></p>
+       
+       <p id="kalimat"><b>🎉💐 Happy Birthday Riya! 💐🎉</b>
+        <br><br>
+        Hey my dearest Riya,<br>
+        Wishing you a day filled with smiles, laughter, and every little thing that makes your heart happy. 💫<br>
+        You’re my bestest friend, buddy....., my constant source of joy, and a true blessing in my life.
+        <br><br>
+        (Tumi jemon shundor manush, temoni tomar jibon-o hok temoni shundor.)<br>
+        — “As beautiful as you are, may your life be just as beautiful.” 🌸
+        <br><br>
+        May your dreams shine brighter than ever,<br>
+        May happiness stay with you always,<br>
+        And may this year bring love, peace, and endless success your way. 💖
+        <br><br>
+        (Shubho jonmodin Riya! Tumi jemon, temoni theko — hasikhushi, doyaloo aar ekdom unique!)<br>
+        — “Happy Birthday Riya! Stay just the way you are — cheerful, kind, and truly unique!” 🎂✨
+        <br><br>
+        Lots of love,<br>
+        <span class="ft">💞 — From your best friend 💞</span></p>
      </blockquote></div>
      
    </div>
@@ -289,67 +307,4 @@ document.addEventListener('click', function() {
     }else{
       klganti.innerHTML="Udah ah segitu aja 🤣<br><br>";katakata = kalimat.innerHTML;kalimat.innerHTML = "";
     }
-    Content.style = "opacity:1;margin-top:1vh";fotostiker.style="display:none";pergeseran.style="display:none";bq.style = "position:relative;opacity:1;visibility:visible;margin-top:0px;transform: scale(1);";
-    setTimeout(kalimatakhir,200);ftganti=0;fthilang();
-  }
-  
-  tompositif = "Yes";
-  tomnegatif = "No";
-  async function aksibalas(){
-    var { isConfirmed: prtanya } = await swals.fire({
-      title: 'Do you want a gift? 🤭❤️',
-      imageUrl: '' + fotostikerPopup.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif, cancelButtonColor: '#FF0000',});
-    if(prtanya){
-       await swals.fire({
-         title: 'Just kidding! 🤣', 
-         html: 'No gift for you 😜❤️', 
-         imageUrl: '' + fotostikerPopupCon.src,
-       });
-       poinjwb=1;
-    } else {
-         await swals.fire({
-         title: 'Aww!', 
-         html: "Alright if you don't want it 😜❤️", 
-         imageUrl: '' + fotostikerPopupCan.src,
-       });
-       poinjwb=2;
-    }
-    bqmuncul();
-    }
-    
-    const pergeseran = document.getElementById('pergeseran');
-    const dotsContainer = document.getElementById('dots-container');
- 
-    const paragraphs = pergeseran.getElementsByTagName('p');
-    const numberOfDots = paragraphs.length;
-
-    for (let i = 0; i < numberOfDots; i++) {
-        const dot = document.createElement('div');
-        dot.className = 'dot';
-        if (i === 0) {
-            dot.classList.add('active');
-        }
-        dotsContainer.appendChild(dot);
-    }
-
-    function moveToNextDot() {
-        const activeDot = document.querySelector('.dot.active');
-        let nextDot = activeDot.nextElementSibling;
-        if (!nextDot) {
-            nextDot = dotsContainer.firstElementChild;
-        }
-        activeDot.classList.remove('active');
-        nextDot.classList.add('active');
-    }
-    
-function berjatuhan() {
-    const heart = document.createElement('div');
-    heart.className = 'heart';
-    heart.innerHTML = `<svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg>`;
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.addEventListener('animationend', () => heart.remove());
-    document.body.appendChild(heart);
-}
-</script>
-</body>
-</html>
+    Content.style = "opacity:1;margin-top:1vh";fotostiker.style="display:none";pergeseran.style="disp
